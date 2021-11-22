@@ -20,14 +20,10 @@ class AllSalle extends React.Component {
 		   		<View style={styles.nav_head}>
 		   			<Icon name="arrow-left" size={27} color="#FF8038" />
 		   			<Text style={styles.titre}>
-			    		Salles disponibles
+			    		Listes des salles
 			    	</Text>
 			    	<Icon name="search" size={30} color="#FF8038" onPress= {() => {
-			    		<SearchBar
-					        placeholder="Search"
-					        theme="light"
-					        platform="android"
-					    />
+			    		
 			    	}} />
 		   		</View>
 		        <FlatList 

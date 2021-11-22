@@ -5,6 +5,7 @@ import { Pressable, View, Text, StyleSheet, Image } from 'react-native'
 class CardSalle extends React.Component {
 	render(){
 		const salle = this.props.salle;
+		const reserve = salle.reserve;
 		return(
 			<View style={styles.container}>
 				<Image 
@@ -13,9 +14,14 @@ class CardSalle extends React.Component {
 				/>
 
 				<View style={styles.description}>
-					<Text style={styles.titre}>
-						Salle n° {salle.nom}
-					</Text>
+					<View style={styles.head_desc} >
+						<Text style={styles.titre}>
+							 S{salle.nom}
+						</Text>
+						<Text style={styles.txt_reserv} >
+							{reserve ? 'reservé' : ' '}
+						</Text>
+					</View>
 					<Text style={styles.capacite}>
 						Capacite : {salle.capacite}
 					</Text>
@@ -59,6 +65,10 @@ const styles = StyleSheet.create({
 		borderBottomLeftRadius: 10,
 		borderBottomRightRadius: 10
 	},
+	head_desc: {
+		flexDirection: 'row',
+		justifyContent: 'space-between'
+	},
 	titre: {
 		fontSize: 24,
 		marginLeft: 20,
@@ -83,6 +93,12 @@ const styles = StyleSheet.create({
 	txt_bouton: {
 		textAlign: 'center',
 		fontSize: 18,
+		color: '#FF8038'
+	},
+	txt_reserv: {
+		fontSize: 20,
+		marginRight: 30,
+		marginTop: 6,
 		color: '#FF8038'
 	}
 });
