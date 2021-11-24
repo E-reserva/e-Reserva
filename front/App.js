@@ -1,16 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
+import 'react-native-gesture-handler';
 import React from 'react';
-import { View } from 'react-native';
-import AllSalle from './composants/views/AllSalle';
+import DrawerNavigationPage from './navigation/DrawerNavigationPage';
 
-
-export default function App() {
+function App() {
   return (
-    <View>
-      <StatusBar style="auto"
-        animated={true}
-       />
-      <AllSalle />
-    </View>
+       <DrawerNavigationPage />
   );
 }
+
+export default App;

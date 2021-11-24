@@ -1,10 +1,16 @@
-import React from 'react'
-import { Pressable, View, Text, StyleSheet, Image } from 'react-native'
+import React from 'react';
+import { Pressable, View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Link } from '@react-navigation/native';
+
+import CardDetailSalle from './CardDetailSalle';
+
 
 
 class CardSalle extends React.Component {
+
 	render(){
-		const salle = this.props.salle;
+		console.log(this.props)
+		const {salle} = this.props;
 		const reserve = salle.reserve;
 		return(
 			<View style={styles.container}>
@@ -19,7 +25,7 @@ class CardSalle extends React.Component {
 							 S{salle.nom}
 						</Text>
 						<Text style={styles.txt_reserv} >
-							{reserve ? 'reservé' : ' '}
+							{reserve ? 'disponible' : ' '}
 						</Text>
 					</View>
 					<Text style={styles.capacite}>
@@ -27,12 +33,16 @@ class CardSalle extends React.Component {
 					</Text>
 
 					<View style={styles.cont_boutton}>
-						<Pressable style={styles.bouton} onPress={() => {alert('Voici ses details')}}>
-							<Text style={styles.txt_bouton}>Détails</Text>
-						</Pressable>
-						<Pressable style={styles.bouton} onPress={() => {alert('vous avez reserver cette salle')}}>
-							<Text style={styles.txt_bouton}>Réserver</Text>
-						</Pressable>
+						<TouchableOpacity style={styles.bouton}>
+							<Link to={{ screen: 'Apropos de la salle', params: {id: `${salle.id}`} }} style={styles.txt_bouton}>
+						      	<Text >Détails</Text>
+						    </Link>
+						</TouchableOpacity>
+						<TouchableOpacity style={styles.bouton}>
+							<Link to={{ screen: 'Connexion'}} style={styles.txt_bouton}>
+						      	<Text >Réserver</Text>
+						    </Link>
+						</TouchableOpacity>
 					</View>
 
 				</View>
@@ -49,7 +59,7 @@ const styles = StyleSheet.create({
 		marginVertical: 8,
 	},
 	img_baniere: {
-		width: 346,
+		width: '100%',
 		resizeMode: "cover",
 		flex: 2,
 		borderTopLeftRadius: 10,
@@ -84,7 +94,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'space-around'
 	},
 	bouton: {
-		borderWidth: 1,
+		borderWidth: 2,
 		paddingVertical: 10,
 		width: 130,
 		borderRadius: 20, 
@@ -99,7 +109,7 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		marginRight: 30,
 		marginTop: 6,
-		color: '#FF8038'
+		color: '#74EC8D'
 	}
 });
 
