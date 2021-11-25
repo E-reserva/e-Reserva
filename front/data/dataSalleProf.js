@@ -24,6 +24,7 @@ const data = [
 		id: 4,
 		nom: 4,
 		capacite: 41,
+
 		image: "../assets/img/salle/salle6.jpg",
 		reserve: true
 	},

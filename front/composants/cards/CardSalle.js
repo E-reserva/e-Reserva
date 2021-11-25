@@ -9,7 +9,6 @@ import CardDetailSalle from './CardDetailSalle';
 class CardSalle extends React.Component {
 
 	render(){
-		console.log(this.props)
 		const {salle} = this.props;
 		const reserve = salle.reserve;
 		return(
@@ -39,7 +38,7 @@ class CardSalle extends React.Component {
 						    </Link>
 						</TouchableOpacity>
 						<TouchableOpacity style={styles.bouton}>
-							<Link to={{ screen: 'Connexion'}} style={styles.txt_bouton}>
+							<Link to={{ screen: 'Faites votre choix'}} style={styles.txt_bouton}>
 						      	<Text >Réserver</Text>
 						    </Link>
 						</TouchableOpacity>

@@ -36,7 +36,6 @@ class LoginEsti extends React.Component{
 
 const styles = StyleSheet.create({
 	container: {
-		padding: 20,
 		backgroundColor: '#0E4452',
 		flexDirection: 'column',
 		justifyContent: 'center',
