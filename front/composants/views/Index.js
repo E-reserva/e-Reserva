@@ -36,7 +36,6 @@ class Index extends React.Component{
 								<Text style={styles.txt_cible} >
 									Pour les professeurs
 								</Text>
-								<Icon name="arrow-right" size={25} color='#0E4452' />
 							</View>
 							<Text style={styles.txt_statut} >
 								Salle disponible
@@ -52,7 +51,6 @@ class Index extends React.Component{
 							<Text style={styles.txt_statut} >
 								Salle déjà prise pour aujourd'hui
 							</Text>
-							<Icon name='arrow-right' size={25} color='#0E4452' />
 						</View>
 						<View style={styles.carrousel} >
 							<CardCarousselSalle salle={this.state.salleProf} />

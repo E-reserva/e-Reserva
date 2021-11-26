@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Button, View, Text, FlatList, Image } from 'react-native';
+import { StyleSheet, Button, View, Text, FlatList, Image, Pressable } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import Salle from '../../data/dataSalle';
@@ -16,6 +16,9 @@ class AllSalle extends React.Component {
 	render (){
 		return(
 		    <View style={styles.container}>
+		    	<Pressable onPress={() => {this.props.navigation.navigate("e-Resera")}}>
+		            <Icon name="arrow-left" size={30} color='#0E4452' style={styles.bout_retour} />
+		        </Pressable>
 		        <FlatList 
 		           data ={this.state.salle}
 		           keyExtractor={(item) => item.id.toString()}
@@ -27,16 +30,13 @@ class AllSalle extends React.Component {
 }
 
 const styles = StyleSheet.create({
+	bout_retour: {
+		marginHorizontal: 10,
+    	marginVertical: 10
+  	},
 	container: {
 		backgroundColor: '#DCDFDA',
-		marginTop: 20,
-		marginBottom: 8
-	},
-	titre: {
-		fontSize : 20,
-		marginRight: 40,
-		color: '#F0F0F0',
-		fontWeight: 'bold'
+		marginBottom: 60
 	}
 })
 

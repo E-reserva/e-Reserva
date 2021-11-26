@@ -11,19 +11,19 @@ const data = [
 		nom: 3,
 		capacite: 41,
 		image: "../assets/img/salle/salle4.jpg",
-		reserve: true
+		reserve: false
 	},
 	{
 		id: 3,
 		nom: 4,
-		capacite: 41,
+		capacite: 20,
 		image: "../assets/img/salle/salle5.jpg",
-		reserve: false
+		reserve: true
 	},
 	{
 		id: 4,
 		nom: "Coworking",
-		capacite: 41,
+		capacite: 45,
 		image: "../assets/img/salle/salle5.jpg",
 		reserve: false
 	}

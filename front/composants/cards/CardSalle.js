@@ -2,9 +2,6 @@ import React from 'react';
 import { Pressable, View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { Link } from '@react-navigation/native';
 
-import CardDetailSalle from './CardDetailSalle';
-
-
 
 class CardSalle extends React.Component {
 

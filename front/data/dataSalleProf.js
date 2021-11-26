@@ -18,7 +18,7 @@ const data = [
 		nom: 3,
 		capacite: 41,
 		image: "../assets/img/salle/salle4.jpg",
-		reserve: true
+		reserve: false
 	},
 	{
 		id: 4,
@@ -47,21 +47,21 @@ const data = [
 		nom: 7,
 		capacite: 41,
 		image: "../assets/img/salle/salle3.jpg",
-		reserve: true
+		reserve: false
 	},
 	{
 		id: 8,
 		nom: 8,
 		capacite: 41,
 		image: "../assets/img/salle/salle4.jpg",
-		reserve: true
+		reserve: false
 	},
 	{
 		id: 9,
 		nom: 9,
 		capacite: 41,
 		image: "../assets/img/salle/salle5.jpg",
-		reserve: false
+		reserve: true
 	},
 	{
 		id: 10,

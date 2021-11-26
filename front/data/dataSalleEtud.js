@@ -1,21 +1,21 @@
 const data = [
 	{
 		id: 1,
-		nom: "Coworking",
+		nom: 5,
 		capacite: 41,
 		image: "../../../assets/img/salle/salle2.jpg",
 		reserve: true
 	},
 	{
 		id: 2,
-		nom: 5,
+		nom: 7,
 		capacite: 41, 
 		image: "../../../assets/img/salle/salle2.jpg",
 		reserve: false
 	},
 	{
 		id: 3,
-		nom: 6,
+		nom: "Coworking",
 		capacite: 41,
 		image: "../../../assets/img/salle/salle2.jpg",
 		reserve: true

@@ -14,7 +14,6 @@ const DrawerNavigationPage = () => {
     <NavigationContainer>
       <Drawer.Navigator 
           initialRouteName='e-Reserva'
-          backBehavior='history'
           screenOptions={{
             drawerStyle: {
               backgroundColor: '#0E4452',

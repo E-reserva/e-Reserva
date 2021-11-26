@@ -7,6 +7,8 @@ import CardDetailSalle from '../composants/cards/CardDetailSalle';
 import CardSalle from '../composants/cards/CardSalle';
 import LoginEsti from '../composants/authentification/LoginEsti';
 import CardValidatingReserv from '../composants/cards/CardValidatingReserv';
+import CardValidatingReservTwo from '../composants/cards/CardValidatingReservTwo';
+import AllSalle from '../composants/views/AllSalle';
 
 
 //declaration var Stack qui contient la fonction pour la navigation
@@ -36,6 +38,7 @@ function StackNavigation(){
             <Stack.Screen name="Connexion" component={LoginEsti} />
             <Stack.Screen name="Apropos de la salle" component={CardDetailSalle} />
             <Stack.Screen name="Faites votre choix" component={CardValidatingReserv} />
+            <Stack.Screen name="Faites votre choix suite" component={CardValidatingReservTwo} />
         </Stack.Navigator>
 	)
 }
