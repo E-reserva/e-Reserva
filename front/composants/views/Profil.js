@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         flex: 4, 
-        marginBottom: 20
+        marginBottom: 10
     },
     content: {
         display: 'flex',

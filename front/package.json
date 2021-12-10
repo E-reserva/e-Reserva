@@ -33,10 +33,7 @@
     "react-native-screens": "~3.8.0",
     "react-native-snap-carousel": "^3.9.1",
     "react-native-svg": "^12.1.1",
-    "react-native-vector-icons": "^9.0.0",
-    "react-native-web": "0.17.1"
-  },
-  "devDependencies": {
+    "react-native-text-ticker": "^1.14.0",
     "@babel/core": "^7.12.9"
   },
   "private": true
