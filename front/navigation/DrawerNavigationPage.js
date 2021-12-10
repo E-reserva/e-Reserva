@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import StackNavigation from "./StackNavigation";
 import AllSalle from '../composants/views/AllSalle';
-import Index from '../composants/views/Index';
+import Profil from '../composants/views/Profil';
 
 const Drawer = createDrawerNavigator();
 
@@ -44,6 +44,18 @@ const DrawerNavigationPage = () => {
            drawerIcon: () => (
               <Icon
                  name="list"
+                 size={30}
+                 color="#FF8038"
+              />
+           ),
+        }}
+        />
+        <Drawer.Screen name="Profil utilisateur" component={Profil} 
+          options={{
+           title: 'Profil utilisateur',
+           drawerIcon: () => (
+              <Icon
+                 name="user"
                  size={30}
                  color="#FF8038"
               />
